@@ -28,7 +28,7 @@ public class VentanaUsuario extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("COMPUMUNDO");
 
-        LogIn.setText("INICIAR SECION");
+        LogIn.setText("INICIAR SESION");
         LogIn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LogInActionPerformed(evt);
