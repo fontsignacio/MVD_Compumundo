@@ -91,5 +91,27 @@ public class DB {
         return productos;
     }
     
+    
+    public int total(){ 
+        int total = 0;
+        try{
+            Connection c = getConnection();
+            String sql = "SELECT sum(precio) as total from producto ";
+            ResultSet res = c.createStatement().executeQuery(sql);
+            if (res.next()){
+                if (res.wasNull()){
+                    total = 0;
+                }
+                else{
+                    total = res.getInt("total");
+                }                
+            }
+            
+        }catch(Exception e){
+            System.out.println(e.getMessage());
+        }
+        return total;
+    }
+    
 }
 

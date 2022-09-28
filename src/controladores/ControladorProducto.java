@@ -12,6 +12,12 @@ public class ControladorProducto {
         ventana.setVisible(true);
         cargarTabla();
     }
+    
+    public static void ocultar(){
+        ventana.setVisible(false);
+        cargarTabla();
+    }
+   
     public static void cargarTabla(){
         DefaultTableModel datos = (DefaultTableModel) ventana.getjTable1().getModel();
         datos.setNumRows(0);
@@ -51,6 +57,12 @@ public class ControladorProducto {
         int codigo = Integer.parseInt(ventana.getjTextField1().getText());    
         db.eliminarProducto(codigo);
         cargarTabla(); 
+    }
+    
+    public static void botonTotal(){
+        int total = db.total();
+        ventana.getTotal().setText(Integer.toString(total));
+        
     }
         
 }

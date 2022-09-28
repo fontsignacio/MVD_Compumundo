@@ -1,9 +1,10 @@
-package javaapplication80;
-import controladores.ControladorProducto;
+package compumundo;
+import controladores.*;
 import modelo.*;
-import vista.VentanaProducto;
+import vista.*;
 
-public class JavaApplication80 {
+
+public class Compumundo {
 
     public static void main(String[] args) {
         
@@ -25,7 +26,8 @@ public class JavaApplication80 {
         }
         */
         
-        ControladorProducto.mostrar();     
+        //ControladorProducto.mostrar();
+        ControladorUsuario.mostrar();
 
     }    
 }

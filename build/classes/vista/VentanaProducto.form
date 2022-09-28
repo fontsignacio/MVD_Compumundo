@@ -23,10 +23,30 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Group type="102" attributes="0">
+                  <Component id="jScrollPane1" min="-2" pref="375" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jTextField1" alignment="0" min="-2" pref="118" max="-2" attributes="0"/>
+                          <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jTextField2" alignment="0" min="-2" pref="120" max="-2" attributes="0"/>
+                          <Component id="jLabel2" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="jTextField3" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
                       <Component id="jButton1" min="-2" pref="86" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jButton2" min="-2" pref="87" max="-2" attributes="0"/>
@@ -35,23 +55,26 @@
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jButton4" max="32767" attributes="0"/>
                   </Group>
-                  <Component id="jScrollPane1" min="-2" pref="375" max="-2" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <Component id="jTextField1" min="-2" pref="118" max="-2" attributes="0"/>
+                      <Component id="botonTotal" min="-2" pref="179" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextField2" min="-2" pref="120" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jTextField3" max="32767" attributes="0"/>
+                      <Component id="Total" max="32767" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="41" max="32767" attributes="0"/>
+              <EmptySpace pref="42" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel3" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jTextField2" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -64,7 +87,12 @@
                   <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="jButton4" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="35" max="32767" attributes="0"/>
+              <EmptySpace pref="10" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="botonTotal" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Total" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="jScrollPane1" min="-2" pref="275" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
           </Group>
@@ -153,6 +181,34 @@
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton4ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Codigo"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Nombre"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Precio"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="botonTotal">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Total de Productos"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="botonTotalActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="Total">
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TotalActionPerformed"/>
       </Events>
     </Component>
   </SubComponents>
